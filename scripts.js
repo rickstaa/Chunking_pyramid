@@ -2,8 +2,9 @@
  * Created by ricks on 09/06/2017.
  */
 
+/** Print random pyramid to div **/
 function create_pyramid() {
-    if(typeof(Storage) !== "undefined") {
+    if (typeof(Storage) !== "undefined") {
         if (localStorage.lines) {
             var lines = localStorage.lines;
         } else {
@@ -17,8 +18,8 @@ function create_pyramid() {
     document.querySelector(".left_pyramid").innerHTML = pyramid(lines);
     document.querySelector(".right_pyramid").innerHTML = pyramid(lines);
 
-    // Set radio button
-    switch(lines) {
+    // Set radio button to checked value
+    switch (lines) {
         case "15":
             document.getElementById('button_B').checked = true;
             break;
@@ -30,10 +31,10 @@ function create_pyramid() {
     }
 }
 
-// FUNCTIONS
+// Get user input
 function store_input() {
 
-    if(typeof(Storage) !== "undefined") {
+    if (typeof(Storage) !== "undefined") {
         if (document.querySelector('input[name="lines"]:checked').value) {
             localStorage.lines = document.querySelector('input[name="lines"]:checked').value;
             var lines = localStorage.lines;
@@ -47,6 +48,8 @@ function store_input() {
     }
 }
 
+
+// Create random number pyramid
 function pyramid(lines) {
     var html = '<div class="center">';
     for (var i = lines; i--;) {
