@@ -1,0 +1,78 @@
+html, body {
+}
+
+body {
+    display: table;
+    margin: 25px auto;
+}
+
+p {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1 {
+    font-family: "Montserrat";
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #4CAF50; /*Green*/
+}
+
+.pyramids {
+    font-family: "Droid Serif";
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.left_pyramid {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 25px 10px 25px;
+    letter-spacing: 6px;
+}
+
+.right_pyramid {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 25px 10px 25px;
+    letter-spacing: 6px;
+}
+
+.radio_forum {
+    text-align: center;
+    display: table;
+    margin: 0 auto 15px auto; /*top,right, bottom, left*/
+}
+
+.button_container {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 32px;
+    margin: 0 0 10px 0; /*top,right, bottom, left*/
+}
+
+@media print {
+    .button {
+        display: none !important;
+    }
+
+    .radio_forum {
+        display: none !important;
+    }
+}

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <title>Chunking Pyramids</title>
+</head>
+<body>
+
+<!-- Pyramid fields -->
+<div class="container">
+    <h1>Memory pyramid creater</h1>
+    <div class="pyramids">
+        <div class="left_pyramid">
+        </div>
+        <div class="right_pyramid">
+        </div>
+    </div>
+
+
+    <!-- Input form -->
+    <div class="input">
+        <form name="radiobuttons">
+            <div class="radio_forum">
+                <input id="button_A" type="radio" name="lines" value="10">
+                Beginner
+                <input id="button_B" type="radio" name="lines" value="15">
+                Intermediate
+                <input id="button_C" type="radio" name="lines" value="20">
+                Expert
+            </div>
+            <div class="button_container">
+                <!--<input type="text" id="userInput"> how manny numbers? </input>-->
+                <button class="button" onclick="store_input()">Create memory pyramid</button>
+                <input class="button" type='button' id='btn' value='Print' onclick='window.print();'>
+            </div>
+        </form>
+    </div>
+
+    <!-- Create start pyramids -->
+    <SCRIPT>create_pyramid();</SCRIPT>
+
+</div>
+</body>
+</html>
