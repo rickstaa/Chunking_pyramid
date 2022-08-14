@@ -1,65 +1,76 @@
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Droid+Serif"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik"
+    />
     <script type="text/javascript" src="scripts.js"></script>
 
     <title>Chunking Pyramids</title>
     <!-- Github button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
 
-</head>
-
-<body>
-
-<!-- Pyramid fields -->
-<div class="container">
-    <div class="game_container">
-        <h1>Memory pyramid creater</h1>
+  <body>
+    <!-- Pyramid fields -->
+    <div class="container">
+      <div class="game_container">
+        <h1>Memory pyramid creator</h1>
         <div class="pyramids">
-            <div class="left_pyramid">
-            </div>
-            <div class="right_pyramid">
-            </div>
+          <div class="left_pyramid"></div>
+          <div class="right_pyramid"></div>
         </div>
-
 
         <!-- Input form -->
         <div class="input">
-            <form name="radiobuttons">
-                <div class="radio_forum">
-                    <input id="button_A" type="radio" name="lines" value="10">
-                    Beginner
-                    <input id="button_B" type="radio" name="lines" value="15">
-                    Intermediate
-                    <input id="button_C" type="radio" name="lines" value="20">
-                    Expert
-                </div>
-                <div class="button_container">
-
-                    <!--<input type="text" id="userInput"> how manny numbers? </input>-->
-                    <button class="button" onclick="store_input()">Create memory pyramid</button>
-                    <input class="button" type='button' id='btn' value='Print' onclick='window.print();'>
-                </div>
-            </form>
+          <form name="radiobuttons">
+            <div class="radio_forum">
+              <input id="button_A" type="radio" name="lines" value="10" />
+              Beginner
+              <input id="button_B" type="radio" name="lines" value="15" />
+              Intermediate
+              <input id="button_C" type="radio" name="lines" value="20" />
+              Expert
+            </div>
+            <div class="button_container">
+              <!--<input type="text" id="userInput"> how manny numbers? </input>-->
+              <button class="button" onclick="store_input()">
+                Create memory pyramid
+              </button>
+              <input
+                class="button"
+                type="button"
+                id="btn"
+                value="Print"
+                onclick="window.print();"
+              />
+            </div>
+          </form>
         </div>
 
         <!-- Create pyramids on page load -->
-        <SCRIPT>create_pyramid();</SCRIPT>
+        <script>
+          create_pyramid();
+        </script>
+      </div>
     </div>
-</div>
 
-
-<!-- Contact information and issues button -->
-<footer class="footer">
-    <p style="margin-top:25px;">&#9400; <a href="http://www.keytostudy.com/chunking-markers/">keytostudy.com </a>| Script created by <a href="https://github.com/rickstaa/Chunking_pyramid">Rick Staa</a> |
-        <a class="github-button" href="https://github.com/rickstaa/Chunking_pyramid/issues"
-           data-icon="octicon-issue-opened" aria-label="Issue rickstaa/Chunking_pyramid on GitHub">Issues & requests</a>
-    </p>
-</footer>
-
-
-</body>
+    <!-- Contact information and issues button -->
+    <footer class="footer">
+      <p style="margin-top: 25px">
+        <a href="https://github.com/rickstaa/chunking-pyramid">
+            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/rickstaa/chunking-pyramid?style=social">
+        </a>
+        <a href="https://github.com/rickstaa/Chunking_pyramid/issues">
+            <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/rickstaa/chunking-pyramid?style=social">
+        </a>
+      </p>
+    </footer>
+  </body>
 </html>
