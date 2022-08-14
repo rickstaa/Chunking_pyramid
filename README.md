@@ -1,4 +1,4 @@
-# Chunking pyramid
+# Chunking pyramid creator
 
 Small tool that creates a simple random number pyramid. I use this tool for for my [Key To Study](http://www.keytostudy.com) [chunking pyramids](http://www.keytostudy.com/chunking-markers/) memory practice. This tool creates a number pyramid with random
 
