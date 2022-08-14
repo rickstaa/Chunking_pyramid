@@ -1,110 +1,112 @@
 /* ------ Main CSS */
-html {
-}
-
 body {
-    display: table;
-    margin: 25px auto;
+  display: table;
+  margin: 25px auto;
 }
 
 /* ------ Text CSS*/
 /* unvisited link */
 a:link {
-    color: #46b798;
+  color: #46b798;
 }
 
 /* visited link */
 a:visited {
-    color: #46b798;
+  color: #46b798;
 }
 
 /* mouse over link */
 a:hover {
-    color: #46b798;
+  color: #46b798;
 }
 
 /* selected link */
 a:active {
-    color: #46b798;
+  color: #46b798;
 }
 
 h1 {
-    font-family: "Rubik";
-    text-align: center;
-    color: #008000;
-    margin-top: 10px;
+  font-family: "Rubik";
+  text-align: center;
+  color: #008000;
+  margin-top: 10px;
 }
 
 /* ----- Body CSS */
 .container {
-    display: table-cell;
-    vertical-align: middle;
-    border-style: solid;
-    border-color: #008000; /*Green*/
+  display: table-cell;
+  vertical-align: middle;
+  border-style: solid;
+  border-color: #008000; /*Green*/
 }
 
 /* Chunking pyramids */
 .pyramids {
-    font-family: "Droid Serif";
-    margin-top: 15px;
-    margin-bottom: 15px;
+  font-family: "Droid Serif";
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .left_pyramid {
-    display: inline-block;
-    text-align: center;
-    margin: 0px 25px 10px 25px;
-    letter-spacing: 6px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 25px 10px 25px;
+  letter-spacing: 6px;
 }
 
 .right_pyramid {
-    display: inline-block;
-    text-align: center;
-    margin: 0 25px 10px 25px;
-    letter-spacing: 6px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 25px 10px 25px;
+  letter-spacing: 6px;
 }
 
 /* Input CSS */
 .radio_forum {
-    text-align: center;
-    display: table;
-    margin: 0 auto 15px auto; /*top,right, bottom, left*/
+  text-align: center;
+  display: table;
+  margin: 0 auto 15px auto; /*top,right, bottom, left*/
 }
 
 .button_container {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    font-family: "Rubik";
-    display: inline-block;
-    background-color: #008000;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 15px 32px;
-    margin: 0 0 10px 0; /*top,right, bottom, left*/
+  font-family: "Rubik";
+  display: inline-block;
+  background-color: #008000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin: 0 0 10px 0; /*top,right, bottom, left*/
 }
 
 /*-- Footer CSS */
 .footer {
-    display: table-row;
-    text-align: center;
-    color: #000000;
-    font-family: "Rubik";
-    text-size: 8px;
-    line-height: 200%;
+  display: table-row;
+  text-align: center;
+  color: #000000;
+  font-family: "Rubik";
+  font-size: 8px;
+  line-height: 200%;
+}
+
+.footer a {
+  text-decoration: none;
+  margin: 3px;
 }
 
 /*-- Print css */
 @media print {
-    .button {
-        display: none !important;
-    }
+  .button {
+    display: none !important;
+  }
 
-    .radio_forum {
-        display: none !important;
-    }
+  .radio_forum {
+    display: none !important;
+  }
 }
